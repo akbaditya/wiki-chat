@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Isometra";
+  src:
+    url("/fonts/Isometra.woff2") format("woff2"),
+    url("/fonts/Isometra.otf") format("opentype"),
+    url("/fonts/Isometra.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-chat: "Lora Variable", Georgia, "Times New Roman", serif;
+  --font-brand: "Isometra", "Montserrat Variable", ui-sans-serif, sans-serif;
+
+  --color-cream: #f9f8f6;
+  --color-sand: #efe9e3;
+  --color-stone: #d9cfc7;
+  --color-tan: #c9b59c;
+  --color-ink: #2f2a26;
+  --color-pro: #e8dac8; 
+
+  --color-gray-50: #f9f8f6;
+  --color-gray-100: #efe9e3;
+  --color-gray-200: #d9cfc7;
+  --color-gray-300: #c9b59c;
+  --color-gray-400: #a8998a;
+  --color-gray-500: #7a6e64;
+  --color-gray-600: #5e544b;
+  --color-gray-700: #463e37;
+  --color-gray-800: #2f2a26;
+  --color-gray-900: #1f1b18;
+  --color-blue-50: #efe9e3;
+  --color-blue-100: #e3d9cd;
+  --color-blue-200: #d9cfc7;
+  --color-blue-600: #8a7155; 
+  --color-blue-700: #6f5a43;
+  --color-blue-900: #3f3326;
+
+  --shadow-soft: 0 1px 2px rgb(74 58 40 / 0.06), 0 4px 14px rgb(74 58 40 / 0.08);
+  --shadow-lift: 0 2px 6px rgb(74 58 40 / 0.1), 0 12px 32px rgb(74 58 40 / 0.14);
+  --shadow-bar: 0 2px 14px rgb(74 58 40 / 0.1);
+}
+
+*,
+*::before,
+*::after {
+  border-width: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-stone) transparent;
+}

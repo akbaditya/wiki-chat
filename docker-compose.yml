@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    ports:
+      - "7860:7860"
+    environment:
+      FRONTEND_ORIGIN: http://localhost:7860
+      COOKIE_SECURE: "false"
+      TRUST_PROXY: "false"
+    volumes:
+      - ./backend/.env:/app/.env:ro
+      - ./data:/app/data
