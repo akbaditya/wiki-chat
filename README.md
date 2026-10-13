@@ -6,7 +6,9 @@ question, retries weak searches, and shows exactly what it did.
 
 **Live demo:** <your-demo-url> · **Stack:** Python, FastAPI, LangGraph, LangChain, React, TypeScript
 
-<!-- add 2-3 screenshots or a short GIF here -->
+<p align="center">
+  <img src="docs/demo.gif" alt="Wiki Chat demo: asking a question, images appearing first, then the streamed answer with sources" width="800">
+</p>
 
 ## Features
 - **Streaming chat** with step-by-step status ("Searching Wikipedia…", "Reranking…") that collapses into a
